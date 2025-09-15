@@ -1,7 +1,7 @@
 # nics-vis
 Pythons for the preparation of Gaussian inputs for NICS calculations and visualization of the results
 
-1. nics2d.py
+# nics2d.py 
 This script generates coordinates and Gaussian input files for NICS(h)zz 2D calculations (NICS maps) 
 for all molecular *.xyz files in the working directory. The file template.gjf is used to provide the 
 Gaussian keywords and settings. 
@@ -16,7 +16,7 @@ visual 2D NICS maps.
 For usage:
 python nics2d.py --help
 
-2. nics_map.py
+# nics_map.py
 This script generates 2D NICS maps (PNG format) from Gaussian *.log files in the working directory.  
 Log files must contain the string "NMP" in their filename and should originate from input files generated 
 by the nics2d.py script.  
@@ -29,7 +29,7 @@ The script automatically corrects NICS(h)zz values for tilted rings by rotating 
 Usage:
     python nics_map.py --help
 
-3. nics_solv.py
+# nics_solv.py 
 This script generates differential 2D NICS maps (PNG format) for compounds in either:  
     • two selected solvents, or  
     • singlet (S0) vs. triplet (T1) states.  
