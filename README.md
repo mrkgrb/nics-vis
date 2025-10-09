@@ -1,14 +1,13 @@
 # nics-vis
-Pythons for the preparation of Gaussian inputs for NICS calculations and visualization of the results
+Pythons for the preparation of Gaussian inputs for NICS calculations and visualization of the results.
+Caution: This method and the associated scripts have been tested only for linearly fused polycyclic π-systems (e.g., acenes, phenacenes, DPND, xanthene, fluorene dyes). They are not recommended for branched or pericondensed systems such as coronene, pyrene, or similar architectures.
 
 # nics2d.py 
 This script generates coordinates and Gaussian input files for NICS(h)zz 2D calculations (NICS maps) 
 for all molecular *.xyz files in the working directory. The file template.gjf is used to provide the 
 Gaussian keywords and settings. 
 
-The script is designed for bent and twisted π-systems: it automatically identifies the longest fused 
-polycyclic framework in each molecule and creates grids of Bq points elevated by h above and below the 
-ring planes, perpendicular to them. 
+For each geometry, it identifies the longest fused polycyclic system and aligns it with the xy plane and along the x axis. The script is designed for bent and twisted π-systems: it creates grids of Bq points elevated by h above and below the ring planes of the fused system, perpendicular to them. 
 
 After the Gaussian calculations, use the companion script nics_map.py to extract the results and produce 
 visual 2D NICS maps.
