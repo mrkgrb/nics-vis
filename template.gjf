@@ -1,11 +1,12 @@
 %nprocshared={cores}
 %mem={memory}
 %chk={name_slv}-{calc_type}.chk
-#p nmr=giao lc-whpbe/def2tzvpp{scrf_in} iop(3/107=0200000000) iop(3/108=0200000000) geom=connectivity
+#p nmr=giao lc-whpbe/def2tzvpp{scrf_in} geom=connectivity
 
 {name} in {slv_name} - {calc_data}
 
 0 {trip}
 coords
 numbers
+
 
