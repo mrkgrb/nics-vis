@@ -1,7 +1,7 @@
 # nics-vis
 Pythons for the preparation of Gaussian inputs for NICS calculations and visualization of the results.
 
-\nCAUTION: This method and the associated scripts have been tested only for linearly fused polycyclic π-systems (e.g., acenes, phenacenes, DPND, xanthene, fluorene dyes). They are not recommended for branched or pericondensed systems such as coronene, pyrene, or similar architectures.
+CAUTION: This method and the associated scripts have been tested only for linearly fused polycyclic π-systems (e.g., acenes, phenacenes, DPND, xanthene, fluorene dyes). They are not recommended for branched or pericondensed systems such as coronene, pyrene, or similar architectures.
 
 # nics2d.py 
 This script generates coordinates and Gaussian input files for NICS(h)zz 2D calculations (NICS maps) 
